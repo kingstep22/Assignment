@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Month of the years</title>
+</head>
+<body>
+
+    <input type="" id="">
+    <button onclick="check()"> Click </button>
+    <p id="preview"></p>
+
+</body>
+</html>
+<script>
+    function check() {
+        let input = document.querySelector('input').value.trim().toLowerCase()
+        if (input === 'january') {
+            preview.innerHTML = 'January has 31 days'
+        }else if (input === 'febuary') {
+            preview.innerHTML = 'Febuary has 29 days'
+        }else if (input === 'march') {
+            preview.innerHTML = 'March has 31 days'
+        }else if (input === 'april') {
+            preview.innerHTML = 'April has 30 days'
+        }else if (input === 'may') {
+            preview.innerHTML = 'May has 31 days' 
+        }else if (input === 'june') {
+            preview.innerHTML = 'June has 30 days' 
+        }else if (input === 'july') {
+            preview.innerHTML = 'July has 31 days' 
+        }else if (input === 'aughust') {
+            preview.innerHTML = 'Aughust has 31 days'
+        }
+        else if (input === 'september') {
+            preview.innerHTML = 'September has 30 days'
+        }else if (input === 'october') {
+            preview.innerHTML = 'October has 31 days'
+        }else if (input === 'november') {
+            preview.innerHTML = 'November has 30 days'
+        }else if (input === 'december') {
+            preview.innerHTML = 'December has 31 days'
+        }
+        else{
+            preview.innerHTML = 'Please enter a valid month'
+        }
+
+        input.value = ''
+    }
+
+
+</script>
