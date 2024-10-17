@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="check()"> Click </button>
+    <pre></pre>
+</body>
+</html>
+<script>
+    // function check(params) {
+    //     let key = document.querySelector('val').value.trim().tolowerCase()
+    //     switch (key) {
+    //         case 'monday':
+    //             preview.innerHTML = 'today is monday'
+    //             break;
+    //         case 'tuesday':
+    //             preview.innerHTML = 'today is tuesday'
+    //             break;
+    //         case 'wednesday':
+    //             preview.innerHTML = 'today is wednesday'
+    //             break;
+    //         case 'thursday':
+    //             preview.innerHTML = 'today is thursday'
+    //             break;
+    //         case 'friday':
+    //             preview.innerHTML = 'today is friday'
+    //             break;
+    //         case 'saturday':
+    //             preview.innerHTML = 'today is saturday'
+    //             break;
+    //         case 'sunday':
+    //             preview.innerHTML = 'today is sunday'
+    //             break;
+    //             preview.innerHTML = 'please enter a valid day'
+    //     }
+    //     document.querySelector('val').value = ''
+    // }
+
+
+    let background = document.body
+     
+     function check() {
+        // if(background.style.backgroundColor === 'white') {
+        //     background.style.backgroundColor = 'black'
+        // }else{
+        //     background.style.backgroundColor = 'white'
+        // }
+        let num = Math.floor(Math.random() * 256)
+        let num1 = Math.floor(Math.random() * 256)
+        let num2 = Math.floor(Math.random() * 256)
+        background.style.backgroundColor = `rgb(${num}, ${num1}, ${num2})`
+     }
+
+     
+     
+
+
+</script>
